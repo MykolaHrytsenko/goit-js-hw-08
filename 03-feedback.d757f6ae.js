@@ -1,2 +1,0 @@
-var refs={form:document.querySelector(".feedback-form"),input:document.querySelector('[name="email"]'),message:document.querySelector('[name="message"]')},LOCAL_KEY="feedback-form-state",handleSubmit=function(e){e.preventDefault();var t={email:refs.input.value,message:refs.message.value};console.log(t),localStorage.setItem(LOCAL_KEY,JSON.stringify(t)),refs.input.value=""};refs.form.addEventListener("submit",handleSubmit);
-//# sourceMappingURL=03-feedback.d757f6ae.js.map
