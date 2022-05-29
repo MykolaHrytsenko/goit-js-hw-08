@@ -19,7 +19,7 @@ function inputData() {
 const handleSubmit = (evt) => {
     evt.preventDefault();
     if (refs.message.value === "" || refs.input.value === "") {
-        alert(`Заповніть всі поля, будьласка!`);
+        alert(`Заповніть всі поля, будь ласка!`);
         return;
     }
     refs.input.value = "";
