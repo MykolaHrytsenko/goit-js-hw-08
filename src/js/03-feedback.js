@@ -6,6 +6,7 @@ const refs = {
     message: document.querySelector('[name="message"]')
 }
 const LOCAL_KEY = "feedback-form-state";
+const localSubmitData = localStorage.getItem(LOCAL_KEY);
 refs.form.addEventListener('input', throttle(inputData, 500));
 
 function inputData() {
@@ -25,7 +26,7 @@ const handleSubmit = (evt) => {
     refs.input.value = "";
     refs.message.value = "";
 
-    console.log(localStorage.getItem(LOCAL_KEY));
+    console.log({ localSubmitData });
 };
 
 refs.form.addEventListener('submit', handleSubmit);
